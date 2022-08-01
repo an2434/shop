@@ -41,7 +41,7 @@ function App() {
       </div>
       <div className="body">
         <div className='main-bg'>
-//
+
         </div>
         <div className="product-display">
           <Container>
