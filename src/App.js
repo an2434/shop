@@ -1,16 +1,16 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {useState} from 'react';
+import { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown, Col, Row } from 'react-bootstrap';
-import {data} from './data';
-
+import { data } from './data';
+import Goods from './GoodsComponent';
 
 
 function App() {
 
-let [shose]=useState(data);
-data.Map(function(a){});
+  
+
   return (
     <div className="App">
       <div className="header">
@@ -48,29 +48,24 @@ data.Map(function(a){});
       </div>
       <div className="body">
         <div className='main-bg'></div>
-        
+
         <div className="product-display">
-     
+
           <Container>
-         
+
             <Row>
               <Col sm>
-                <img className ='Goods' src="https://codingapple1.github.io/shop/shoes1.jpg"></img>
-                {shose[0].id}
-                <h4 >{shose[0].title}</h4>
-                <p>{shose[0].content}</p>
-                <p>{shose[0].price}</p>
-                </Col>
-                <Col sm>
-                <img className ='Goods' src="https://codingapple1.github.io/shop/shoes2.jpg"></img>
-                <h4 >상품제목</h4>
-                <p>상품설명</p>
-                </Col>
-                <Col sm>
-                <img className ='Goods' src="https://codingapple1.github.io/shop/shoes3.jpg"></img>
-                <h4 >상품제목</h4>
-                <p>상품설명</p>
-                </Col>
+                <img className='Goods' src="https://codingapple1.github.io/shop/shoes1.jpg"></img>
+               <Goods></Goods>
+              </Col>
+              <Col sm>
+                <img className='Goods' src="https://codingapple1.github.io/shop/shoes2.jpg"></img>
+                <Goods></Goods>
+              </Col>
+              <Col sm>
+                <img className='Goods' src="https://codingapple1.github.io/shop/shoes3.jpg"></img>
+                <Goods></Goods>
+              </Col>
             </Row>
           </Container>
 
