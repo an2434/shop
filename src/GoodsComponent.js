@@ -8,7 +8,7 @@ const Goods = () => {
     const a1 = [0, 1, 2];
     return (
 
-        a1.map((a, i) => {
+        a1.map((i) => {
             return (
                 <Col sm>
 
